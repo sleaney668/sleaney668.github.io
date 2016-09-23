@@ -7,7 +7,7 @@
     <meta name="author" content="">
     <link rel="shortcut icon" href="assets/ico/favicon.png">
 
-    <title>Portfolio</title>
+    <title>SL | Portfolio</title>
 
     <!-- Bootstrap core CSS -->
     <link href="assets/css/bootstrap.css" rel="stylesheet">
@@ -192,6 +192,26 @@
 								var myDoughnut = new Chart(document.getElementById("java").getContext("2d")).Doughnut(doughnutData);
 						</script>
 					</div>
+
+					<div class="col-lg-3 centered">
+						<canvas id="sql" height="130" width="130"></canvas>
+						<p>SQL</p>
+						<br>
+						<script>
+							var doughnutData = [
+									{
+										value: 85,
+										color:"#1abc9c"
+									},
+									{
+										value : 15,
+										color : "#ecf0f1"
+									}
+								];
+								var myDoughnut = new Chart(document.getElementById("sql").getContext("2d")).Doughnut(doughnutData);
+						</script>
+					</div>
+
 					<div class="col-lg-3 centered">
 						<canvas id="linux" height="130" width="130"></canvas>
 						<p>Linux</p>
@@ -199,17 +219,18 @@
 						<script>
 							var doughnutData = [
 									{
-										value: 60,
+										value: 70,
 										color:"#1abc9c"
 									},
 									{
-										value : 40,
+										value : 30,
 										color : "#ecf0f1"
 									}
 								];
 								var myDoughnut = new Chart(document.getElementById("linux").getContext("2d")).Doughnut(doughnutData);
 						</script>
 					</div>
+
 					<div class="col-lg-3 centered">
 						<canvas id="python" height="130" width="130"></canvas>
 						<p>Python</p>
@@ -247,6 +268,7 @@
 								var myDoughnut = new Chart(document.getElementById("javascript").getContext("2d")).Doughnut(doughnutData);
 						</script>
 					</div>
+
 					<div class="col-lg-3 centered">
 						<canvas id="html" height="130" width="130"></canvas>
 						<p>HTML/CSS</p>
@@ -263,24 +285,6 @@
 									}
 								];
 								var myDoughnut = new Chart(document.getElementById("html").getContext("2d")).Doughnut(doughnutData);
-						</script>
-					</div>
-					<div class="col-lg-3 centered">
-						<canvas id="sql" height="130" width="130"></canvas>
-						<p>SQL</p>
-						<br>
-						<script>
-							var doughnutData = [
-									{
-										value: 90,
-										color:"#1abc9c"
-									},
-									{
-										value : 10,
-										color : "#ecf0f1"
-									}
-								];
-								var myDoughnut = new Chart(document.getElementById("sql").getContext("2d")).Doughnut(doughnutData);
 						</script>
 					</div>
 
