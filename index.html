@@ -132,8 +132,63 @@
 		<br>
 		<hr>
 	</div><!--/.container -->
+
+	<!--EDUCATION DESCRIPTION -->
+	<div class="container desc">
+		<div class="row">
+
+				<div class="col-lg-2 col-lg-offset-1">
+					<h5>PROJECTS</h5>
+				</div>
+				<div class="col-lg-6">
+					<p><t>Linux Command builder</t><br/>
+						This web application helps users develop their simple linux skills, it provides an easy to use builder through the use plain english, incrementally allowing additional options such as (CHMOD Matrix, GREP Options & Options builder with added explanation)<br/>
+						<i>Developed using Angular2, TypeScript, compiled using Angular-cli with webpack and hosted through an AWS S3 bucket</i>
+					</p>
+				</div>
+				<div class="col-lg-3">
+					<p><sm>JULY 2017</sm></p>
+				</div>
 	
+				<div class="col-lg-6 col-lg-offset-3">
+					<p><t>Software Engineering Project (Facial recognition)</t><br/>
+						This project required the development of a facial recognition module.<br/>
+						Included the use of: Java (Integration of Open CV Library); Python (Integration of PIP and tweepy Library); PHP; Javascript; JQuery; HTML; CSS<br/>
+						<i>Final year project QUB</i>
+					</p>
+				</div>
+				<div class="col-lg-3">
+					<p><sm>JULY 2016</sm></p>
+				</div>
 	
+		</div><!--/.row -->
+		<br>
+		<hr>
+	</div><!--/.container -->
+	
+
+    <!--COURSES DESCRIPTION -->
+	<div class="container desc">
+		<div class="row">
+
+				<div class="col-lg-2 col-lg-offset-1">
+					<h5>COURSES</h5>
+				</div>
+				<div class="col-lg-6">
+					<p><t>Core elasticsearch developer</t><br/>
+						This hands-on, instructor-led in-classroom course is designed for software developers and engineers who need to develop search and analytics applications using Elasticsearch. Students learn the internals of Elasticsearch from a developer’s perspective, including how to write search queries, perform text analysis, define mappings, perform aggregations, and model data.<br/>
+						<i>License: 25649</i>
+					</p>
+				</div>
+				<div class="col-lg-3">
+					<p><sm>JUNE 2017</sm></p>
+				</div>
+	
+		</div><!--/.row -->
+		<br>
+		<hr>
+	</div><!--/.container -->
+
 	<!--WORK DESCRIPTION -->
 	<div class="container desc" id="work" name="work">
 		<div class="row">
@@ -199,8 +254,27 @@
 					</div>
 
 					<div class="col-lg-3 centered">
+						<canvas id="linux" height="130" width="130"></canvas>
+						<p>Linux</p>
+						<br>
+						<script>
+							var doughnutData = [
+									{
+										value: 85,
+										color:"#1abc9c"
+									},
+									{
+										value : 15,
+										color : "#ecf0f1"
+									}
+								];
+								var myDoughnut = new Chart(document.getElementById("linux").getContext("2d")).Doughnut(doughnutData);
+						</script>
+					</div>
+
+					<div class="col-lg-3 centered">
 						<canvas id="sql" height="130" width="130"></canvas>
-						<p>SQL</p>
+						<p>SQL/ElasticSearch</p>
 						<br>
 						<script>
 							var doughnutData = [
@@ -217,44 +291,27 @@
 						</script>
 					</div>
 
-					<div class="col-lg-3 centered">
-						<canvas id="linux" height="130" width="130"></canvas>
-						<p>Linux</p>
-						<br>
-						<script>
-							var doughnutData = [
-									{
-										value: 70,
-										color:"#1abc9c"
-									},
-									{
-										value : 30,
-										color : "#ecf0f1"
-									}
-								];
-								var myDoughnut = new Chart(document.getElementById("linux").getContext("2d")).Doughnut(doughnutData);
-						</script>
-					</div>
 
 
 					<div class="col-lg-3 col-lg-offset-3 centered">
-						<canvas id="concurrent" height="130" width="130"></canvas>
-						<p>Concurrent Programming</p>
+						<canvas id="html" height="130" width="130"></canvas>
+						<p>Javascript/Typescript/HTML/CSS</p>
 						<br>
 						<script>
 							var doughnutData = [
 									{
-										value: 55,
+										value: 75,
 										color:"#1abc9c"
 									},
 									{
-										value : 45,
+										value : 25,
 										color : "#ecf0f1"
 									}
 								];
-								var myDoughnut = new Chart(document.getElementById("concurrent").getContext("2d")).Doughnut(doughnutData);
+								var myDoughnut = new Chart(document.getElementById("html").getContext("2d")).Doughnut(doughnutData);
 						</script>
 					</div>
+
 
 					<div class="col-lg-3 centered">
 						<canvas id="python" height="130" width="130"></canvas>
@@ -274,30 +331,11 @@
 								var myDoughnut = new Chart(document.getElementById("python").getContext("2d")).Doughnut(doughnutData);
 						</script>
 					</div>
-					
+
+
 					<div class="col-lg-3 centered">
-						<canvas id="csharp" height="130" width="130"></canvas>
-						<p>C#</p>
-						<br>
-						<script>
-							var doughnutData = [
-									{
-										value: 75,
-										color:"#1abc9c"
-									},
-									{
-										value : 25,
-										color : "#ecf0f1"
-									}
-								];
-								var myDoughnut = new Chart(document.getElementById("csharp").getContext("2d")).Doughnut(doughnutData);
-						</script>
-					</div>
-
-
-					<div class="col-lg-3 col-lg-offset-3 centered">
 						<canvas id="rest" height="130" width="130"></canvas>
-						<p>RESTful WebServices</p>
+						<p>RESTful WebServices/Spring</p>
 						<br>
 						<script>
 							var doughnutData = [
@@ -314,43 +352,6 @@
 						</script>
 					</div>
 
-					<div class="col-lg-3 centered">
-						<canvas id="javascript" height="130" width="130"></canvas>
-						<p>Javascript</p>
-						<br>
-						<script>
-							var doughnutData = [
-									{
-										value: 50,
-										color:"#1abc9c"
-									},
-									{
-										value : 50,
-										color : "#ecf0f1"
-									}
-								];
-								var myDoughnut = new Chart(document.getElementById("javascript").getContext("2d")).Doughnut(doughnutData);
-						</script>
-					</div>
-
-					<div class="col-lg-3 centered">
-						<canvas id="html" height="130" width="130"></canvas>
-						<p>HTML/CSS</p>
-						<br>
-						<script>
-							var doughnutData = [
-									{
-										value: 50,
-										color:"#1abc9c"
-									},
-									{
-										value : 50,
-										color : "#ecf0f1"
-									}
-								];
-								var myDoughnut = new Chart(document.getElementById("html").getContext("2d")).Doughnut(doughnutData);
-						</script>
-					</div>
 				
 
 			</div><!--/.row -->
